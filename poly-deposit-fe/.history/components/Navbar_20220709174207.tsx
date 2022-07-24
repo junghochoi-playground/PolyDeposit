@@ -46,16 +46,18 @@ export default function Navbar() {
           <Box>PolyDeposit</Box>
 
           <Flex alignItems={'center'}>
-            <NextLink href={'/login'} passHref>
-              <Link>Login</Link>
-            </NextLink>
             <Stack direction={'row'} spacing={7}>
               <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
 
-              {/* 
-              <Menu>
+              
+                <NextLink href={'/login'} passHref>
+                  <Link>Login</Link>
+                </NextLink>
+              
+
+              {/* <Menu>
                 
                  <MenuButton
                   as={Button}
@@ -86,8 +88,7 @@ export default function Navbar() {
                   <MenuItem>Account Settings</MenuItem>
                   <MenuItem>Login</MenuItem>
                 </MenuList> 
-              </Menu> 
-            */}
+              </Menu> */}
             </Stack>
           </Flex>
         </Flex>
