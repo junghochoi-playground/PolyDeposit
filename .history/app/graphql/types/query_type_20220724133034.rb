@@ -13,9 +13,5 @@ module Types
     def testField
       "Hello World!"
     end
-
-
-    
-
   end
 end
